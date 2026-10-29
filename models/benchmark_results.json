@@ -1,0 +1,81 @@
+{
+  "dataset": "data/crop_data.csv",
+  "rows": 2200,
+  "features": [
+    "N",
+    "P",
+    "K",
+    "temperature",
+    "humidity",
+    "ph",
+    "rainfall"
+  ],
+  "classes": [
+    "apple",
+    "banana",
+    "blackgram",
+    "chickpea",
+    "coconut",
+    "coffee",
+    "cotton",
+    "grapes",
+    "jute",
+    "kidneybeans",
+    "lentil",
+    "maize",
+    "mango",
+    "mothbeans",
+    "mungbean",
+    "muskmelon",
+    "orange",
+    "papaya",
+    "pigeonpeas",
+    "pomegranate",
+    "rice",
+    "watermelon"
+  ],
+  "seed": 42,
+  "metrics": [
+    {
+      "model": "Random Forest",
+      "accuracy": 0.9954545454545455,
+      "precision_weighted": 0.9956709956709956,
+      "recall_weighted": 0.9954545454545455,
+      "f1_weighted": 0.9954517027687759,
+      "train_seconds": 0.059,
+      "test_seconds": 0.0129,
+      "test_samples": 440,
+      "split": "stratified 80/20, random_state=42"
+    },
+    {
+      "model": "GA-Random Forest",
+      "accuracy": 0.9954545454545455,
+      "precision_weighted": 0.9956709956709956,
+      "recall_weighted": 0.9954545454545455,
+      "f1_weighted": 0.9954517027687759,
+      "train_seconds": 0.06,
+      "test_seconds": 0.0136,
+      "test_samples": 440,
+      "split": "stratified 80/20, random_state=42",
+      "ga_3fold_cv_accuracy": 0.9926139546061519,
+      "ga_candidates_evaluated": 10,
+      "ga_parameters": {
+        "n_estimators": 100,
+        "max_depth": null,
+        "max_features": "sqrt",
+        "min_samples_leaf": 1
+      }
+    },
+    {
+      "model": "XGBoost",
+      "accuracy": 0.9886363636363636,
+      "precision_weighted": 0.9893742621015349,
+      "recall_weighted": 0.9886363636363636,
+      "f1_weighted": 0.9884930494686593,
+      "train_seconds": 0.545,
+      "test_seconds": 0.0022,
+      "test_samples": 440,
+      "split": "stratified 80/20, random_state=42"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.dylib
+*.pyd
+
+# Virtual environment
+venv/
+.venv/
+ENV/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDEs
+.vscode/
+*.code-workspace
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs and reports
+*.log
+coverage/
+htmlcov/
+.pytest_cache/
+
+# Streamlit
+.streamlit/
+
+# Data and model artifacts
+*.csv
+*.joblib
+*.pkl
+
+# Inputs and baseline artefacts required to run the committed app.
+!data/crop_data.csv
+!models/rf_crop_model.joblib
+!models/scaler.joblib
+!models/label_encoder.joblib
+!models/feature_names.joblib
+!models/ga_rf_shap_global.csv
+!models/*_confusion_matrix.csv
+!models/*_classification_report.csv
+
+# Runtime inputs and committed benchmark evidence required to run the app.
+!data/crop_data.csv
+!models/rf_crop_model.joblib
+!models/scaler.joblib
+!models/label_encoder.joblib
+!models/feature_names.joblib
+!models/ga_rf_shap_global.csv
+!models/*_confusion_matrix.csv
+!models/*_classification_report.csv
+
+# Local env files
+.env
+.env.*
